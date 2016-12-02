@@ -1,0 +1,20 @@
+header
+{
+    background: url("../image/guide.jpeg") no-repeat center ;
+    background-color: green;
+    background-size: contain;
+    color: red;
+    width: 100%;
+}
+body{
+
+    background-size: cover;
+}
+.lien_lancement{
+    color: deepskyblue;
+    font-size:2em;
+    text-align: right;
+}
+section{
+    text-align: center;
+}

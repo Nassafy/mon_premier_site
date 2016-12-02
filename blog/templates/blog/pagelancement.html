@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <p><a href="{% url 'lancement_serveur' %}" class="lien_lancement">Cliquer ici pour lancer le serveur Terraria!</a></p>
+
+    <p>Entrer le code le lancement du serveur</p>
+    <form action="{% url '/code/ ' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" name="OK" value="code"/>
+
+    </form>
+    <p>{{ data }}</p>
+
+{% endblock %}
